@@ -1,0 +1,31 @@
+mixin nav(className, items, activeIndex)
+    nav(class = className)
+        ul.vertical.menu.large-horizontal
+            each item, ndx  in items
+                li
+                    a(href="#!")= item
+
+
+footer.footer
+    .row            
+        +nav('large-5 columns', ['Home', "About Us", "Services", "Rooms", "Contact Us"], 2)     
+        .contact-information.large-3.columns
+            -var icons = {'842 State Street East New Albany, IN 47158' : 'fi-marker', '+1-202-555-0145': 'fi-telephone', 'contact@hotel&spa.com':'fi-mail'}
+            ul.no-bullet.vertical
+                each value, key in icons
+                    li
+                        i(class=value) 
+                        =key
+        .about-us.large-4.columns
+            h4 About Us
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Corporis laboriosam illo enim laborum alias velit numquam.
+                | Ex sed quia molestiae dolor quaerat modi animi architecto recusandae soluta atque, accusantium ratione?
+            ul.menu.social.align-right
+                li
+                    a(href="http://www.twitter.com")
+                        i.fi-social-twitter    
+                li
+                    a(href="http://www.facebook.com")
+                        i.fi-social-facebook    
+    p.text-center.copyright All Rights Reserved Hotel & Spa 2015.        

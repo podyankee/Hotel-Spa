@@ -1,0 +1,5 @@
+
+name: Travis Nailson
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json","assets/libs", "assets/css/libs.scss",  "assets/css/main.scss", "1.txt"]
+destination: dist/

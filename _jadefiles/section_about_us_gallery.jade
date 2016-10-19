@@ -1,0 +1,26 @@
+section.about-us-gallery
+    .medium-6.columns.empty
+    .medium-6.columns.empty.bluebg
+    .content-about-us
+        .row
+            .medium-6.columns
+                h2 About Us
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labris nisi ut aliquip ex ea commodo consequat.
+            #galleryModal.reveal(data-close-on-click="true", data-reveal="" , data-animation-in="fade-in-up" ,data-animation-out="scale-out-down")
+                img#imageContainer(src="")
+                button.close-button(data-close="", aria-label="Close reveal", type="button")
+                    span(aria-hidden="true") &times;
+            #gallery.medium-6.columns.bluebg
+                h2.white Gallery
+                .row.small-up-3.medium-up-3.large-up-3
+                    -for(var j=1;j<7;j++)
+                        .column
+                            a(data-open="galleryModal")
+                                img.thumbnail(src="assets/img/gallery/thumbnail/image"+j+".jpg", alt="Thumbnail")
+                    
+<!-- Separator image -->
+.separator-image.bar-image       
+<!-- Booking section --> 
+        

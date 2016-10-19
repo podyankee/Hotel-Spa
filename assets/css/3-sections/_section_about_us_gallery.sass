@@ -1,0 +1,26 @@
+/**** About Us section****/
+.about-us-gallery
+    position: relative
+.about-us-gallery, .empty
+    +breakpoint(large)
+        height: rem-calc(560)
+    +breakpoint(medium)
+        height: rem-calc(420)
+
+.bluebg
+    background-color: $primary-color
+.content-about-us
+    +breakpoint(medium)
+        position: absolute
+        top: rem-calc(20)
+        left: 0
+        width: 100%
+.white
+    color: #fff
+
+.bar-image
+    background-image: url(../img/separators/small/separator02-image.jpg)
+    @include breakpoint(medium)
+        background-image: url(../img/separators/medium/separator02-image.jpg)
+    @include breakpoint(large)
+        background-image: url(../img/separators/large/separator02-image.jpg)

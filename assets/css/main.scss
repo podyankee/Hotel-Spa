@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import "libs.scss";
+@import "1-base/vars";
+@import "1-base/base";
+
+@import "2-modules/buttons";
+
+@import "3-sections/header";
+@import "3-sections/section-rooms";
+@import "3-sections/section_about_us_gallery";
+@import "3-sections/section-booking";
+@import "3-sections/footer";
+
+
+
+@import "4-layouts/mediaqueries";

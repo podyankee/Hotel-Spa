@@ -1,0 +1,43 @@
+section.booking.row
+    .large-8.large-centered.columns.text-center
+        h2 Book now
+        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem modi, est praesentium ad in veritatis, eaque. Eligendi ipsa rem dicta, perferendis consectetur, asperiores ex quae porro sit quas qui quidem.
+        a.button(data-open="modalBook") Book Now
+        #modalBook.reveal(data-reveal="", data-animation-in="scale-in-up", data-animation-out="scale-out-down")
+            h2.text-center Booking Form
+            form(data-abide="", novalidate="")
+                .alert.callout(style="display:none;", data-abide-error="")
+                    p
+                        i.fi-alert
+                        |There're some problems in your form !
+                .row.columns
+                    label
+                        |Name:
+                        input(type="text", placeholder="Your Name", required="")
+                        span.form-error
+                            i.fi-alert
+                            |The name fild is mandatory
+                .row.columns
+                    label
+                        |Email:
+                        input(type="text", placeholder="Your Email",required="", pattern="email")
+                        span.form-error
+                            i.fi-alert
+                            |The email fild is mandatory
+                .row.columns
+                    label
+                        |Phone:
+                        input(type="text", placeholder="Your Phone Number", required="", pattern="number")
+                        span.form-error
+                            i.fi-alert
+                            |The phone fild is mandatory
+                .row.columns
+                    label
+                        |Message:
+                        textarea(placeholder="Your Message")
+                .row.columns
+                    input.button(type="submit", value="Submit")
+                    button.button.success(type="reset", value="Reset")
+                        |Reset
+                button.close-button(data-close="", aria-label="Close reveal", type="button")
+                    span(aria-hidden="true") &times;
