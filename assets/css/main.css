@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Inika:400,700");
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.3
@@ -424,7 +425,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Inika", serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -7206,11 +7207,13 @@ h2 {
   color: #ffffff;
 }
 
-.promo-video {
+.promo-video,
+.promo {
   position: relative;
 }
 
-.promo-video #overlay {
+.promo-video #overlay,
+.promo #overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -7223,12 +7226,14 @@ h2 {
   /* IE6-9 */
 }
 
-.promo-video #video {
-  display: block;
-  width: 100%;
+.promo-video #video,
+.promo #video {
+  display: inline-block;
+  vertical-align: baseline;
 }
 
-.promo-video .header-content {
+.promo-video .header-content,
+.promo .header-content {
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -7236,7 +7241,8 @@ h2 {
   width: 100%;
 }
 
-.promo-video .headliner {
+.promo-video .headliner,
+.promo .headliner {
   position: absolute;
   left: 0;
   top: 50%;
@@ -7246,7 +7252,8 @@ h2 {
           transform: translateY(-50%);
 }
 
-.promo-video .headliner h1 {
+.promo-video .headliner h1,
+.promo .headliner h1 {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   color: #ffffff;
@@ -7395,6 +7402,10 @@ section.rooms .room-title h3 {
 
 .booking {
   padding: 3.125rem;
+}
+
+.content {
+  padding: 1.875rem;
 }
 
 .footer {
