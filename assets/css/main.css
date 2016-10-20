@@ -7289,6 +7289,10 @@ section.rooms {
   padding: 1.875rem 0;
 }
 
+section.rooms a {
+  color: #0a0a0a;
+}
+
 section.rooms .room-image {
   position: relative;
 }
@@ -7347,6 +7351,22 @@ section.rooms .room-title h3 {
 @media screen and (min-width: 64em) {
   .pool-image {
     background-image: url(../img/separators/large/separator01-image.jpg);
+  }
+}
+
+.rooms-image {
+  background-image: url(../img/separators/small/separator03-image.jpg);
+}
+
+@media screen and (min-width: 40em) {
+  .rooms-image {
+    background-image: url(../img/separators/medium/separator03-image.jpg);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .rooms-image {
+    background-image: url(../img/separators/large/separator03-image.jpg);
   }
 }
 

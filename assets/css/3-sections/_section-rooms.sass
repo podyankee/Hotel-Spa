@@ -1,5 +1,7 @@
 section.rooms
     padding: rem-calc(30 0)
+    a
+        color: $black
     .room-image
         position: relative
         img
@@ -33,3 +35,9 @@ section.rooms
         background-image: url(../img/separators/medium/separator01-image.jpg)
     @include breakpoint(large)
         background-image: url(../img/separators/large/separator01-image.jpg)
+.rooms-image
+    background-image: url(../img/separators/small/separator03-image.jpg)
+    @include breakpoint(medium)
+        background-image: url(../img/separators/medium/separator03-image.jpg)
+    @include breakpoint(large)
+        background-image: url(../img/separators/large/separator03-image.jpg)
