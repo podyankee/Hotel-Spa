@@ -1,0 +1,41 @@
+.off-canvas-wrapper
+	.off-canvas-wrapper-inner(data-off-canvas-wrapper='')
+		#mainMenu.off-canvas.position-left(data-off-canvas='', data-position='left')
+			h3.text-center Navigation
+			ul.menu.vertical(data-drilldown)
+				li
+					a(href="index.html") Home
+				li
+					a(href="aboutus.html") About Us
+				li
+					a(href="services.html") Services
+				li.has-submenu.is-drilldown-submenu-parent
+					a(href="rooms.html") Rooms
+					ul.menu.vertical
+						li
+							a(href="room-01.html") Room 01
+						li
+							a(href="room-02.html") Room 02
+						li
+							a(href="room-03.html") Room 03
+						li
+							a(href="room-04.html") Room 04
+						li
+							a(href="room-05.html") Room 05
+						li
+							a(href="room-06.html") Room 06
+				li
+					a(href="contactus.html") Contact Us
+		.off-canvas-content(data-off-canvas-content='')
+			section.promo
+				#overlay
+				img(src="assets/img/featured/room01.jpg", alt="promo image")
+				.headliner.hide-for-small-only
+					.column.row
+						h1.text-center Room 01 / Imperial Room
+				.header-content
+					.row
+						.small-8.medium-4.columns
+							img(src="assets/img/logo.svg", alt="Site logo")
+						.small-4.medium-4.columns
+							a.menu-icon.float-right(href="#" data-open='mainMenu') 

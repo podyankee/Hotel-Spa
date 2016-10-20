@@ -7370,6 +7370,28 @@ section.rooms .room-title h3 {
   }
 }
 
+.room01-image {
+  background-image: url(../img/separators/small/separator-room01-image.jpg);
+}
+
+@media screen and (min-width: 40em) {
+  .room01-image {
+    background-image: url(../img/separators/medium/separator-room01-image.jpg);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .room01-image {
+    background-image: url(../img/separators/large/separator-room01-image.jpg);
+  }
+}
+
+.nopd {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 /**** About Us section****/
 .about-us-gallery {
   position: relative;
