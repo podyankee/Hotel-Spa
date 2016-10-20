@@ -1,32 +1,47 @@
 .row.column.show-for-small-only
     h2 Contact Us / Booking
 section.content
-    .row
-        .large-6.columns.large-centered
-            .row
-                .medium-12.columns
-                    label(for="name") Name
-                        input(type="text", placeholder="Your Name", name="name")
-            .row
-                .medium-6.columns
-                    label(for="name") Email
-                        input(type="email", placeholder="Your Email", name="email")
-                .medium-6.columns
-                    label(for="name") City
-                        input(type="text", placeholder="Your City", name="city")
-            .row
-                .medium-6.columns
-                    label Number  of People
-                        select
-                            option(value="1") 1
-                            option(value="2") 2
-                            option(value="3", selected="") 3
-                            option(value="4") 4
-                            option(value="5") 5
-                            option(value="6") 6
-                            option(value="7") 7
-                            option(value="8") 8
-                .medium-6.columns
-                    label(for="date") Arrival Date
-                        input(type="date", name="date")
-                        
+    form
+        .row
+            .large-6.columns.large-centered
+                .row
+                    .medium-12.columns
+                        label(for="name") Name
+                            input(type="text", placeholder="Your Name", name="name")
+                .row
+                    .medium-6.columns
+                        label(for="name") Email
+                            input(type="email", placeholder="Your Email", name="email")
+                    .medium-6.columns
+                        label(for="name") City
+                            input(type="text", placeholder="Your City", name="city")
+                .row
+                    .medium-6.columns
+                        label Number  of People
+                            select
+                                option(value="1") 1
+                                option(value="2") 2
+                                option(value="3", selected="") 3
+                                option(value="4") 4
+                                option(value="5") 5
+                                option(value="6") 6
+                                option(value="7") 7
+                                option(value="8") 8
+                    .medium-6.columns
+                        label(for="date") Arrival Date
+                            input(type="date", name="date")
+                .row
+                    .medium-6.columns
+                        legend Extra bed:
+                        input#yes(type="radio", name="extrabed", value="yes", required="")
+                        label(for="yes") Yes
+                        input#no(type="radio", name="extrabed", value="no")
+                        label(for="no") No
+                .row.column
+                    button.button(type="submit", value="Send") 
+                        span.show-for-sr Send
+                        span(aria-hidden="true")
+                            i.fi-mail
+                        |Send
+                    button.button.reset(type="reset", value="Reset") Reset
+                            

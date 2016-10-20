@@ -7207,6 +7207,15 @@ h2 {
   color: #ffffff;
 }
 
+.button.reset {
+  border: 2px solid #dc3838;
+  color: #dc3838;
+}
+
+.button.reset, .button.reset:hover, .button.reset:focus {
+  background-color: transparent;
+}
+
 .promo-video,
 .promo {
   position: relative;
