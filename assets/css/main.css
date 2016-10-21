@@ -7484,6 +7484,8 @@ section.rooms .room-title h3 {
 
 .footer .menu a {
   color: #ffffff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .footer .contact-information li {
